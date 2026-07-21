@@ -1,0 +1,327 @@
+# 📘 Git Basics
+
+## What is Version Control?
+
+Version Control is a system that tracks changes made to files over time. It allows developers to collaborate, maintain history, and restore previous versions when needed.
+
+---
+
+# What is Git?
+
+Git is a **Distributed Version Control System (DVCS)** that helps developers track code changes, collaborate efficiently, and manage different versions of a project.
+
+---
+
+# Why Use Git?
+
+- Track changes in source code
+- Collaborate with multiple developers
+- Maintain complete project history
+- Restore previous versions
+- Create and manage branches
+- Merge code efficiently
+- Support CI/CD workflows
+
+---
+
+# Features of Git
+
+- Distributed Version Control
+- Fast and Lightweight
+- Branching and Merging
+- Complete History Tracking
+- Open Source
+- Secure Data Integrity
+- Supports Collaboration
+
+---
+
+# Git Architecture
+
+Git consists of four main areas:
+
+```text
+Working Directory
+        │
+        ▼
+Staging Area (Index)
+        │
+        ▼
+Local Repository
+        │
+        ▼
+Remote Repository (GitHub)
+```
+
+---
+
+## 1. Working Directory
+
+The Working Directory contains the files you are currently creating or modifying.
+
+Example:
+
+```bash
+touch app.py
+```
+
+---
+
+## 2. Staging Area
+
+The Staging Area stores changes that are ready to be committed.
+
+Move files to the staging area:
+
+```bash
+git add file.txt
+```
+
+Stage all files:
+
+```bash
+git add .
+```
+
+---
+
+## 3. Local Repository
+
+The Local Repository stores committed changes on your local machine.
+
+Commit changes:
+
+```bash
+git commit -m "Initial commit"
+```
+
+---
+
+## 4. Remote Repository
+
+A Remote Repository is hosted on platforms like GitHub and allows collaboration.
+
+Upload changes:
+
+```bash
+git push origin main
+```
+
+---
+
+# Basic Git Workflow
+
+```text
+Create or Modify Files
+        │
+        ▼
+git status
+        │
+        ▼
+git add .
+        │
+        ▼
+git commit -m "Commit message"
+        │
+        ▼
+git push origin main
+```
+
+---
+
+# Essential Git Commands
+
+## Initialize a Repository
+
+```bash
+git init
+```
+
+Creates a new Git repository.
+
+---
+
+## Clone a Repository
+
+```bash
+git clone <repository-url>
+```
+
+Example:
+
+```bash
+git clone https://github.com/user/project.git
+```
+
+---
+
+## Check Repository Status
+
+```bash
+git status
+```
+
+Shows tracked, modified, and untracked files.
+
+---
+
+## Add Files to the Staging Area
+
+Single file:
+
+```bash
+git add file.txt
+```
+
+All files:
+
+```bash
+git add .
+```
+
+---
+
+## Commit Changes
+
+```bash
+git commit -m "Added README"
+```
+
+Saves staged changes to the local repository.
+
+---
+
+## View Commit History
+
+```bash
+git log
+```
+
+Compact view:
+
+```bash
+git log --oneline
+```
+
+---
+
+## View File Differences
+
+```bash
+git diff
+```
+
+Displays changes that haven't been committed.
+
+---
+
+## Remove a File
+
+```bash
+git rm file.txt
+```
+
+---
+
+## Rename a File
+
+```bash
+git mv old.txt new.txt
+```
+
+---
+
+# Git File States
+
+A file in Git can be in one of the following states:
+
+```text
+Untracked
+     │
+git add
+     ▼
+Tracked (Staged)
+     │
+git commit
+     ▼
+Committed
+     │
+Modify File
+     ▼
+Modified
+```
+
+---
+
+# Common Git Commands
+
+| Command | Description |
+|----------|-------------|
+| `git init` | Initialize a repository |
+| `git clone` | Clone a repository |
+| `git status` | Show repository status |
+| `git add` | Stage changes |
+| `git commit` | Save changes |
+| `git log` | View commit history |
+| `git log --oneline` | Compact commit history |
+| `git diff` | Show file differences |
+| `git rm` | Remove a file |
+| `git mv` | Rename a file |
+
+---
+
+# Interview Questions
+
+### 1. What is Git?
+
+Git is a distributed version control system used to track changes in source code and enable collaboration among developers.
+
+---
+
+### 2. What is Version Control?
+
+Version Control is a system that records changes to files over time, allowing users to restore previous versions and collaborate effectively.
+
+---
+
+### 3. What is the difference between Git and GitHub?
+
+| Git | GitHub |
+|-----|---------|
+| Version Control System | Cloud-based Git hosting platform |
+| Works locally | Works online |
+| Tracks code changes | Stores and shares Git repositories |
+
+---
+
+### 4. What is the Staging Area?
+
+The Staging Area is an intermediate area where changes are prepared before being committed to the local repository.
+
+---
+
+### 5. What is the purpose of `git status`?
+
+It displays the current state of the repository, including modified, staged, and untracked files.
+
+---
+
+### 6. What is the purpose of `git add`?
+
+It moves changes from the Working Directory to the Staging Area.
+
+---
+
+### 7. What is the purpose of `git commit`?
+
+It saves staged changes permanently in the local Git repository.
+
+---
+
+# Summary
+
+- Git is a Distributed Version Control System (DVCS).
+- Git tracks changes and maintains project history.
+- Files move through the **Working Directory → Staging Area → Local Repository → Remote Repository**.
+- Frequently used commands include `git init`, `git clone`, `git status`, `git add`, `git commit`, and `git log`.
+- Git enables efficient collaboration and version management in software development.
