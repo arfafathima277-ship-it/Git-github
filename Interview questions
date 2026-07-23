@@ -1,0 +1,35 @@
+
+# Git & GitHub
+
+1. What is Git?
+2. What is GitHub?
+3. What is the difference between Git and GitHub?
+4. What is a Repository?
+5. What is Version Control?
+6. Why do we use Git?
+7. What does `git init` do?
+8. What does `git clone` do?
+9. What does `git status` do?
+10. What does `git add .` do?
+11. What does `git commit -m "message"` do?
+12. What does `git push` do?
+13. What does `git pull` do?
+14. What is the difference between `git fetch` and `git pull`?
+15. What is a Git Branch?
+16. Why do we create branches?
+17. What is the purpose of `git checkout`?
+18. What is the purpose of `git merge`?
+19. What is a Merge Conflict?
+10. How do you resolve a Merge Conflict?
+21. What is the purpose of `.gitignore`?
+22. What is the difference between `git reset` and `git revert`?
+23. What is the purpose of `git log`?
+24. What is the purpose of `git diff`?
+25. What is the difference between a Local Repository and a Remote Repository?
+26. What is the `origin` remote in Git?
+27. What is the difference between `git clone` and `git fork`?
+28. What is Git Staging?
+29. What is the Working Directory?
+30. What is the Staging Area?
+31. What is Git Commit History?
+32. Explain the complete Git workflow from `git init` to `git push`.
