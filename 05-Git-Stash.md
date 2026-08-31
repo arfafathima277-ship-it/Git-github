@@ -6,6 +6,7 @@ Git Stash is a feature that temporarily saves your uncommitted changes without c
 
 In simple words, Git Stash acts like a temporary storage area for your unfinished work.
 
+
 ---
 
 ## Why Do We Use Git Stash?
